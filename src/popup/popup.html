@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html data-theme="auto">
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="../lib/theme.css" />
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <header class="pop-head">
+    <span class="ribbon synced" id="statusRibbon" title=""></span>
+    <h1 data-i18n="quickAddTitle">Ajouter un favori</h1>
+    <button class="btn btn-ghost" id="openManagerBtn" data-i18n-title="openManager" title="">☰</button>
+  </header>
+
+  <!-- Bandeau de connexion (première utilisation) -->
+  <section id="connectPanel" hidden>
+    <p class="muted" data-i18n="connectIntro"></p>
+    <button class="btn btn-primary" id="connectBtn" data-i18n="connectAnytype"></button>
+    <div id="codeStep" hidden>
+      <p class="small muted" data-i18n="connectCodeHint"></p>
+      <div class="code-row">
+        <input type="text" id="codeInput" maxlength="4" inputmode="numeric" placeholder="0000" autocomplete="off" />
+        <button class="btn btn-primary" id="codeSubmit" data-i18n="validate"></button>
+      </div>
+    </div>
+    <div id="spaceStep" hidden>
+      <p class="small muted" data-i18n="chooseSpaceHint"></p>
+      <div class="code-row">
+        <select id="spaceSelect"></select>
+        <button class="btn btn-primary" id="spaceConfirm" data-i18n="validate"></button>
+      </div>
+    </div>
+    <p id="connectError" class="small" style="color: var(--danger)" hidden></p>
+  </section>
+
+  <!-- Formulaire d'ajout -->
+  <form id="addForm" hidden>
+    <div class="field">
+      <label data-i18n="fieldName"></label>
+      <input type="text" id="title" required />
+    </div>
+    <div class="field">
+      <label>URL</label>
+      <input type="url" id="url" required />
+    </div>
+    <div class="field">
+      <label data-i18n="fieldFolder"></label>
+      <select id="folder"></select>
+    </div>
+    <div class="field">
+      <label data-i18n="fieldTags"></label>
+      <div id="tags"></div>
+    </div>
+    <div class="field" id="saveModeField">
+      <label data-i18n="fieldFullSave"></label>
+      <div class="seg" role="radiogroup">
+        <label class="seg-opt"><input type="radio" name="saveFull" value="no" checked /><span data-i18n="no"></span></label>
+        <label class="seg-opt"><input type="radio" name="saveFull" value="yes" /><span data-i18n="yes"></span></label>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary btn-block" id="submitBtn" data-i18n="addBookmark"></button>
+    <p id="addError" class="small" style="color: var(--danger)" hidden></p>
+  </form>
+
+  <footer class="pop-foot">
+    <span id="statusText" class="small muted"></span>
+    <button class="btn btn-ghost small" id="syncNowBtn" data-i18n="syncNow"></button>
+  </footer>
+
+  <script src="../lib/util.js"></script>
+  <script src="../lib/ui-common.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html data-theme="auto">
+<head>
+  <meta charset="utf-8" />
+  <title>Anytype Marks</title>
+  <link rel="stylesheet" href="../lib/theme.css" />
+  <link rel="stylesheet" href="manager.css" />
+</head>
+<body>
+  <div class="layout">
+    <!-- ---------- barre latérale ---------- -->
+    <aside class="sidebar">
+      <div class="brand">
+        <span class="ribbon synced brand-ribbon"></span>
+        <h1>Anytype Marks</h1>
+      </div>
+
+      <nav>
+        <button class="nav-item active" id="navAll" data-i18n="allBookmarks"></button>
+      </nav>
+
+      <div class="side-section">
+        <div class="side-head">
+          <h2 data-i18n="folders"></h2>
+          <button class="btn btn-ghost small" id="newFolderBtn" data-i18n-title="newFolder" title="">＋</button>
+        </div>
+        <ul id="folderList" class="side-list"></ul>
+      </div>
+
+      <div class="side-section">
+        <div class="side-head"><h2 data-i18n="tags"></h2></div>
+        <ul id="tagList" class="side-list"></ul>
+      </div>
+
+      <div class="side-foot">
+        <div class="side-status">
+          <span class="ribbon" id="statusRibbon"></span>
+          <span class="small muted" id="statusText"></span>
+        </div>
+        <div class="side-actions">
+          <button class="btn" id="syncNowBtn" data-i18n-title="syncNow" title=""><span class="ico">⟳</span> <span data-i18n="syncShort"></span></button>
+          <button class="btn" id="optionsBtn" data-i18n-title="settings" title=""><span class="ico">⚙</span> <span data-i18n="settings"></span></button>
+        </div>
+      </div>
+    </aside>
+
+    <!-- ---------- contenu ---------- -->
+    <main class="content">
+      <header class="toolbar">
+        <input type="search" id="search" class="input search" data-i18n-placeholder="searchPlaceholder" />
+        <select id="sort" class="input sort">
+          <option value="dateAddedDesc" data-i18n="sortAddedDesc"></option>
+          <option value="dateAddedAsc" data-i18n="sortAddedAsc"></option>
+          <option value="dateModifiedDesc" data-i18n="sortModifiedDesc"></option>
+          <option value="titleAsc" data-i18n="sortAZ"></option>
+          <option value="titleDesc" data-i18n="sortZA"></option>
+          <option value="manual" data-i18n="sortManual"></option>
+        </select>
+        <select id="filterSync" class="input sort">
+          <option value="" data-i18n="filterSyncAll"></option>
+          <option value="synced" data-i18n="filterSynced"></option>
+          <option value="pending" data-i18n="filterNotSynced"></option>
+        </select>
+        <span class="count-chip" id="countText"></span>
+      </header>
+
+      <div id="activeFilters" class="active-filters" hidden></div>
+
+      <div id="listViewport" class="viewport" tabindex="0">
+        <div id="listSpacer"></div>
+        <div id="listWindow"></div>
+      </div>
+    </main>
+  </div>
+
+  <!-- ---------- menu contextuel ---------- -->
+  <div id="ctxMenu" class="ctx" hidden></div>
+
+  <!-- ---------- modale d'édition ---------- -->
+  <dialog id="editDialog">
+    <form method="dialog" id="editForm">
+      <h2 data-i18n="editBookmark"></h2>
+      <div class="field"><label data-i18n="fieldName"></label><input type="text" id="eTitle" required /></div>
+      <div class="field"><label>URL</label><input type="url" id="eUrl" required /></div>
+      <div class="field"><label data-i18n="fieldFolder"></label><select id="eFolder"></select></div>
+      <div class="field"><label data-i18n="fieldTags"></label><div id="eTags"></div></div>
+      <div class="field"><label data-i18n="fieldDescription"></label><textarea id="eDesc" rows="3"></textarea></div>
+      <div class="field">
+        <label data-i18n="fieldSaveMode"></label>
+        <select id="eSaved">
+          <option value="link" data-i18n="filterLink"></option>
+          <option value="full" data-i18n="filterFull"></option>
+        </select>
+      </div>
+      <div class="dialog-actions">
+        <button type="button" class="btn" id="editCancel" data-i18n="cancel"></button>
+        <button type="submit" class="btn btn-primary" data-i18n="save"></button>
+      </div>
+    </form>
+  </dialog>
+
+  <!-- ---------- modale nouveau dossier ---------- -->
+  <dialog id="folderDialog">
+    <form method="dialog" id="folderForm">
+      <h2 data-i18n="createFolderTitle"></h2>
+      <div class="field"><label data-i18n="fieldName"></label><input type="text" id="fName" required /></div>
+      <div class="field"><label data-i18n="folderParent"></label><select id="fParent"></select></div>
+      <div class="dialog-actions">
+        <button type="button" class="btn" id="folderCancel" data-i18n="cancel"></button>
+        <button type="submit" class="btn btn-primary" data-i18n="save"></button>
+      </div>
+    </form>
+  </dialog>
+
+  <!-- ---------- modale de conflit ---------- -->
+  <dialog id="conflictDialog">
+    <h2 data-i18n="conflictTitle"></h2>
+    <p class="muted small" data-i18n="conflictHint"></p>
+    <div class="conflict-cols">
+      <div class="conflict-col">
+        <h3>Firefox</h3>
+        <div id="cLocal" class="conflict-body"></div>
+        <button class="btn btn-primary" id="keepLocal" data-i18n="keepFirefox"></button>
+      </div>
+      <div class="conflict-col">
+        <h3>Anytype</h3>
+        <div id="cRemote" class="conflict-body"></div>
+        <button class="btn btn-primary" id="keepRemote" data-i18n="keepAnytype"></button>
+      </div>
+    </div>
+    <div class="dialog-actions">
+      <button class="btn" id="conflictClose" data-i18n="later"></button>
+    </div>
+  </dialog>
+
+  <script src="../lib/util.js"></script>
+  <script src="../lib/ui-common.js"></script>
+  <script src="manager.js"></script>
+</body>
+</html>

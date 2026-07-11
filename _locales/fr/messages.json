@@ -1,0 +1,500 @@
+{
+  "extName": {
+    "message": "Anytype Marks — Synchronisation des favoris"
+  },
+  "extDescription": {
+    "message": "Synchronise vos favoris Firefox avec Anytype, en local et chiffré. Fonctionne hors ligne."
+  },
+  "actionTitle": {
+    "message": "Anytype Marks"
+  },
+  "quickAddTitle": {
+    "message": "Ajouter un favori"
+  },
+  "connectIntro": {
+    "message": "Connectez l'extension à votre application Anytype pour activer la synchronisation."
+  },
+  "connectAnytype": {
+    "message": "Connecter Anytype"
+  },
+  "connectCodeHint": {
+    "message": "Saisissez le code à 4 chiffres affiché dans Anytype."
+  },
+  "validate": {
+    "message": "Valider"
+  },
+  "fieldName": {
+    "message": "Nom"
+  },
+  "fieldSpace": {
+    "message": "Espace Anytype"
+  },
+  "fieldFolder": {
+    "message": "Dossier"
+  },
+  "fieldTags": {
+    "message": "Tags"
+  },
+  "tagsPlaceholder": {
+    "message": "lecture, projet, à trier…"
+  },
+  "fieldFullSave": {
+    "message": "Sauvegarde complète de la page"
+  },
+  "yes": {
+    "message": "Oui"
+  },
+  "no": {
+    "message": "Non"
+  },
+  "addBookmark": {
+    "message": "Ajouter le favori"
+  },
+  "syncNow": {
+    "message": "Synchroniser maintenant"
+  },
+  "openManager": {
+    "message": "Ouvrir le gestionnaire"
+  },
+  "anytypeUnreachable": {
+    "message": "Anytype est injoignable. Vérifiez que l'application est ouverte et que l'API est activée (Paramètres → API)."
+  },
+  "offlineSpace": {
+    "message": "Hors ligne — espace par défaut"
+  },
+  "connected": {
+    "message": "Connecté à Anytype"
+  },
+  "badCode": {
+    "message": "Code incorrect ou expiré. Réessayez."
+  },
+  "added": {
+    "message": "Favori ajouté"
+  },
+  "addFailed": {
+    "message": "Impossible d'ajouter le favori"
+  },
+  "statusOnline": {
+    "message": "Anytype connecté"
+  },
+  "statusOffline": {
+    "message": "Hors ligne — en file d'attente"
+  },
+  "statusPending": {
+    "message": "$1 en attente"
+  },
+  "statusConflicts": {
+    "message": "$1 conflit(s)"
+  },
+  "notifSyncOk": {
+    "message": "Synchronisation terminée."
+  },
+  "notifSyncError": {
+    "message": "Erreur de synchronisation."
+  },
+  "notifConflict": {
+    "message": "Conflit détecté"
+  },
+  "notifSaveDone": {
+    "message": "Page sauvegardée."
+  },
+  "notifOffline": {
+    "message": "Connexion à Anytype perdue. Les modifications sont mises en file d'attente."
+  },
+  "menuAddPage": {
+    "message": "Ajouter aux favoris Anytype"
+  },
+  "menuOpenManager": {
+    "message": "Ouvrir le gestionnaire de favoris"
+  },
+  "allBookmarks": {
+    "message": "Tous les favoris"
+  },
+  "folders": {
+    "message": "Dossiers"
+  },
+  "tags": {
+    "message": "Tags"
+  },
+  "newFolder": {
+    "message": "Nouveau dossier"
+  },
+  "searchPlaceholder": {
+    "message": "Rechercher (titre, URL, tags, dossier)…"
+  },
+  "sortAddedDesc": {
+    "message": "Ajout : récent → ancien"
+  },
+  "sortAddedAsc": {
+    "message": "Ajout : ancien → récent"
+  },
+  "sortModifiedDesc": {
+    "message": "Dernière modification"
+  },
+  "sortAZ": {
+    "message": "Titre A → Z"
+  },
+  "sortZA": {
+    "message": "Titre Z → A"
+  },
+  "sortManual": {
+    "message": "Ordre manuel"
+  },
+  "filterSyncAll": {
+    "message": "Sync. : tous"
+  },
+  "filterSynced": {
+    "message": "Synchronisés"
+  },
+  "filterNotSynced": {
+    "message": "Non synchronisés"
+  },
+  "filterFull": {
+    "message": "Sauvegarde complète"
+  },
+  "filterLink": {
+    "message": "Lien uniquement"
+  },
+  "countBookmarks": {
+    "message": "$1 favori(s) affiché(s) sur $2"
+  },
+  "editBookmark": {
+    "message": "Modifier le favori"
+  },
+  "fieldDescription": {
+    "message": "Description"
+  },
+  "fieldSaveMode": {
+    "message": "Mode de sauvegarde"
+  },
+  "cancel": {
+    "message": "Annuler"
+  },
+  "save": {
+    "message": "Enregistrer"
+  },
+  "conflictTitle": {
+    "message": "Résoudre le conflit"
+  },
+  "conflictHint": {
+    "message": "Ce favori a été modifié à la fois dans Firefox et dans Anytype. Choisissez la version à conserver."
+  },
+  "keepFirefox": {
+    "message": "Garder Firefox"
+  },
+  "keepAnytype": {
+    "message": "Garder Anytype"
+  },
+  "later": {
+    "message": "Plus tard"
+  },
+  "close": {
+    "message": "Fermer"
+  },
+  "renameFolder": {
+    "message": "Renommer le dossier"
+  },
+  "newSubfolder": {
+    "message": "Nouveau sous-dossier"
+  },
+  "deleteFolder": {
+    "message": "Supprimer le dossier"
+  },
+  "deleteFolderConfirm": {
+    "message": "Supprimer le dossier « $1 » et tout son contenu ?"
+  },
+  "stateSynced": {
+    "message": "Synchronisé"
+  },
+  "statePending": {
+    "message": "En attente de synchronisation"
+  },
+  "stateConflict": {
+    "message": "Conflit — cliquez pour résoudre"
+  },
+  "ctxOpen": {
+    "message": "Ouvrir"
+  },
+  "ctxOpenNewTab": {
+    "message": "Ouvrir dans un nouvel onglet"
+  },
+  "ctxEdit": {
+    "message": "Modifier"
+  },
+  "ctxDuplicate": {
+    "message": "Dupliquer"
+  },
+  "ctxCopyLink": {
+    "message": "Copier le lien"
+  },
+  "ctxForceSync": {
+    "message": "Forcer la synchronisation"
+  },
+  "ctxOpenAnytype": {
+    "message": "Ouvrir dans Anytype"
+  },
+  "ctxDelete": {
+    "message": "Supprimer"
+  },
+  "resolveConflict": {
+    "message": "Résoudre le conflit"
+  },
+  "linkCopied": {
+    "message": "Lien copié"
+  },
+  "syncQueued": {
+    "message": "Synchronisation demandée"
+  },
+  "notSyncedYet": {
+    "message": "Ce favori n'est pas encore synchronisé avec Anytype."
+  },
+  "savePermissionHint": {
+    "message": "Sauvegarde impossible : ouvrez la page ou accordez la permission de capture dans les paramètres."
+  },
+  "settings": {
+    "message": "Paramètres"
+  },
+  "settingsIntro": {
+    "message": "Toutes les données sont stockées localement et chiffrées (AES-256). Rien ne quitte votre machine en dehors d'Anytype."
+  },
+  "sectionConnection": {
+    "message": "Connexion à Anytype"
+  },
+  "disconnect": {
+    "message": "Révoquer la connexion"
+  },
+  "disconnectConfirm": {
+    "message": "Révoquer le token Anytype ? Vous devrez vous reconnecter."
+  },
+  "spaceHint": {
+    "message": "Espace où seront créés les favoris. Modifiable à tout moment."
+  },
+  "sectionSync": {
+    "message": "Synchronisation"
+  },
+  "optAutoSync": {
+    "message": "Synchronisation automatique"
+  },
+  "optSyncInterval": {
+    "message": "Fréquence (minutes)"
+  },
+  "optConflict": {
+    "message": "En cas de conflit"
+  },
+  "conflictLatest": {
+    "message": "Dernière modification gagne"
+  },
+  "conflictFirefox": {
+    "message": "Firefox prioritaire"
+  },
+  "conflictAnytype": {
+    "message": "Anytype prioritaire"
+  },
+  "conflictAsk": {
+    "message": "Me demander"
+  },
+  "importAll": {
+    "message": "Importer les favoris Firefox existants"
+  },
+  "importDone": {
+    "message": "$1 favori(s) importé(s)."
+  },
+  "sectionSave": {
+    "message": "Sauvegarde des pages"
+  },
+  "optSaveMode": {
+    "message": "À l'ajout d'un favori"
+  },
+  "saveModeLink": {
+    "message": "Lien uniquement"
+  },
+  "saveModeFull": {
+    "message": "Toujours sauvegarder la page"
+  },
+  "saveModeAsk": {
+    "message": "Demander à chaque ajout"
+  },
+  "optSaveImages": {
+    "message": "Inclure les images"
+  },
+  "optFetchPermission": {
+    "message": "Capture des pages en arrière-plan"
+  },
+  "fetchPermissionHint": {
+    "message": "Autorise la sauvegarde de pages qui ne sont pas ouvertes dans un onglet."
+  },
+  "grant": {
+    "message": "Autoriser"
+  },
+  "granted": {
+    "message": "Permission accordée"
+  },
+  "notGranted": {
+    "message": "Permission refusée"
+  },
+  "sectionCache": {
+    "message": "Cache local"
+  },
+  "optMaxCache": {
+    "message": "Taille maximale (Mo)"
+  },
+  "optAutoPrune": {
+    "message": "Suppression automatique des pages les plus anciennes"
+  },
+  "cacheStats": {
+    "message": "$1 page(s) sauvegardée(s) · $2 Mo utilisés"
+  },
+  "clearCache": {
+    "message": "Vider le cache des pages"
+  },
+  "clearCacheConfirm": {
+    "message": "Supprimer toutes les pages sauvegardées localement ?"
+  },
+  "cacheCleared": {
+    "message": "Cache vidé"
+  },
+  "sectionUI": {
+    "message": "Interface"
+  },
+  "optTheme": {
+    "message": "Thème"
+  },
+  "themeAuto": {
+    "message": "Automatique (suivre Firefox)"
+  },
+  "themeLight": {
+    "message": "Clair"
+  },
+  "themeDark": {
+    "message": "Sombre"
+  },
+  "optNotifications": {
+    "message": "Notifications"
+  },
+  "langHint": {
+    "message": "La langue suit celle de Firefox (français et anglais disponibles)."
+  },
+  "saved": {
+    "message": "Enregistré"
+  },
+  "connStateOk": {
+    "message": "Connecté à Anytype"
+  },
+  "connStateNoAuth": {
+    "message": "Anytype détecté — connexion requise"
+  },
+  "connStateOffline": {
+    "message": "Anytype injoignable (application fermée ?)"
+  },
+  "syncShort": {
+    "message": "Synchroniser"
+  },
+  "noReaderMode": {
+    "message": "mode Lecture indisponible sur cette page"
+  },
+  "permissionDenied": {
+    "message": "Permission refusée : autorisez l'accès à localhost pour communiquer avec Anytype."
+  },
+  "chooseSpaceHint": {
+    "message": "Choisissez l'Espace Anytype où seront créés vos favoris (modifiable dans les Paramètres)."
+  },
+  "spaceChosen": {
+    "message": "Espace sélectionné"
+  },
+  "savedTag": {
+    "message": "Sauvegardé"
+  },
+  "sectionRules": {
+    "message": "Règles de tags automatiques"
+  },
+  "addRule": {
+    "message": "Ajouter une règle"
+  },
+  "ruleName": {
+    "message": "Nom de la règle (ex : Travail)"
+  },
+  "ruleEnabled": {
+    "message": "Règle active"
+  },
+  "matchAll": {
+    "message": "toutes les conditions"
+  },
+  "matchAny": {
+    "message": "au moins une condition"
+  },
+  "addCondition": {
+    "message": "Ajouter une condition"
+  },
+  "condFolder": {
+    "message": "Dossier"
+  },
+  "condTitle": {
+    "message": "Titre"
+  },
+  "condUrl": {
+    "message": "URL"
+  },
+  "opEquals": {
+    "message": "est égal à"
+  },
+  "opStartsWith": {
+    "message": "commence par"
+  },
+  "opContains": {
+    "message": "contient"
+  },
+  "opNotContains": {
+    "message": "ne contient pas"
+  },
+  "opRegex": {
+    "message": "regex"
+  },
+  "condValuePlaceholder": {
+    "message": "valeur (ex : pro, Travail/clients/<<client>>, ^https://…)"
+  },
+  "ruleTags": {
+    "message": "Tags à ajouter"
+  },
+  "deleteRule": {
+    "message": "Supprimer la règle"
+  },
+  "createFolderTitle": {
+    "message": "Nouveau dossier"
+  },
+  "folderParent": {
+    "message": "Dossier parent"
+  },
+  "rulesIntroShort": {
+    "message": "Ajoutez automatiquement des tags selon le dossier, le titre ou l'URL du favori. Cliquez sur « ? » pour le guide et les variables dynamiques."
+  },
+  "rulesHelpTitle": {
+    "message": "Aide — Règles de tags automatiques"
+  },
+  "rulesHelpWhat": {
+    "message": "Une règle = des conditions + des tags. Si les conditions correspondent (toutes, ou au moins une, selon le mode choisi), les tags sont ajoutés au favori. Toutes les règles qui correspondent s'appliquent en même temps."
+  },
+  "rulesHelpWhen": {
+    "message": "Les règles s'appliquent : dans le popup dès que vous choisissez un dossier (les tags apparaissent immédiatement, vous pouvez les retirer), quand vous déplacez un favori dans Firefox, à la création d'un favori, et quand un dossier est renommé."
+  },
+  "rulesHelpVarsTitle": {
+    "message": "Variables dynamiques"
+  },
+  "rulesHelpVars1": {
+    "message": "Écrivez <<var>> (ou $$$$var, c'est équivalent) dans une condition pour capturer le nom d'un dossier, puis réutilisez <<var>> dans les tags. La variable capture exactement un niveau de dossier et conserve la casse d'origine."
+  },
+  "rulesHelpExCond": {
+    "message": "Condition : Dossier · contient · Travail/clients/<<client>>"
+  },
+  "rulesHelpExTag": {
+    "message": "Tags à ajouter : <<client>>"
+  },
+  "rulesHelpExResult": {
+    "message": "→ un favori placé dans « Travail/clients/Entreprise1 » reçoit le tag Entreprise1 ; dans « Travail/clients/Dupont », le tag Dupont."
+  },
+  "rulesHelpVars2": {
+    "message": "Plusieurs variables sont possibles (Travail/<<type>>/<<nom>>) et les tags peuvent composer (projet-<<nom>>). Un tag dont la variable n'est pas résolue est ignoré."
+  },
+  "rulesHelpVars3": {
+    "message": "Avec l'opérateur regex, les groupes de capture deviennent <<1>>, <<2>>… et les groupes nommés (?<org>…) deviennent <<org>>. Exemple : URL · regex · github\\.com/(?<org>[\\w-]+)/ avec le tag gh:<<org>>."
+  }
+}

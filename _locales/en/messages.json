@@ -1,0 +1,500 @@
+{
+  "extName": {
+    "message": "Anytype Marks — Bookmark Sync"
+  },
+  "extDescription": {
+    "message": "Sync your Firefox bookmarks with Anytype, locally and encrypted. Works offline."
+  },
+  "actionTitle": {
+    "message": "Anytype Marks"
+  },
+  "quickAddTitle": {
+    "message": "Add a bookmark"
+  },
+  "connectIntro": {
+    "message": "Connect the extension to your Anytype app to enable sync."
+  },
+  "connectAnytype": {
+    "message": "Connect Anytype"
+  },
+  "connectCodeHint": {
+    "message": "Enter the 4-digit code shown in Anytype."
+  },
+  "validate": {
+    "message": "Confirm"
+  },
+  "fieldName": {
+    "message": "Name"
+  },
+  "fieldSpace": {
+    "message": "Anytype space"
+  },
+  "fieldFolder": {
+    "message": "Folder"
+  },
+  "fieldTags": {
+    "message": "Tags"
+  },
+  "tagsPlaceholder": {
+    "message": "reading, project, to-sort…"
+  },
+  "fieldFullSave": {
+    "message": "Full page save"
+  },
+  "yes": {
+    "message": "Yes"
+  },
+  "no": {
+    "message": "No"
+  },
+  "addBookmark": {
+    "message": "Add bookmark"
+  },
+  "syncNow": {
+    "message": "Sync now"
+  },
+  "openManager": {
+    "message": "Open manager"
+  },
+  "anytypeUnreachable": {
+    "message": "Anytype is unreachable. Make sure the app is open and the API is enabled (Settings → API)."
+  },
+  "offlineSpace": {
+    "message": "Offline — default space"
+  },
+  "connected": {
+    "message": "Connected to Anytype"
+  },
+  "badCode": {
+    "message": "Wrong or expired code. Try again."
+  },
+  "added": {
+    "message": "Bookmark added"
+  },
+  "addFailed": {
+    "message": "Could not add the bookmark"
+  },
+  "statusOnline": {
+    "message": "Anytype connected"
+  },
+  "statusOffline": {
+    "message": "Offline — queued"
+  },
+  "statusPending": {
+    "message": "$1 pending"
+  },
+  "statusConflicts": {
+    "message": "$1 conflict(s)"
+  },
+  "notifSyncOk": {
+    "message": "Sync complete."
+  },
+  "notifSyncError": {
+    "message": "Sync error."
+  },
+  "notifConflict": {
+    "message": "Conflict detected"
+  },
+  "notifSaveDone": {
+    "message": "Page saved."
+  },
+  "notifOffline": {
+    "message": "Lost connection to Anytype. Changes are queued."
+  },
+  "menuAddPage": {
+    "message": "Add to Anytype bookmarks"
+  },
+  "menuOpenManager": {
+    "message": "Open bookmark manager"
+  },
+  "allBookmarks": {
+    "message": "All bookmarks"
+  },
+  "folders": {
+    "message": "Folders"
+  },
+  "tags": {
+    "message": "Tags"
+  },
+  "newFolder": {
+    "message": "New folder"
+  },
+  "searchPlaceholder": {
+    "message": "Search (title, URL, tags, folder)…"
+  },
+  "sortAddedDesc": {
+    "message": "Added: newest first"
+  },
+  "sortAddedAsc": {
+    "message": "Added: oldest first"
+  },
+  "sortModifiedDesc": {
+    "message": "Last modified"
+  },
+  "sortAZ": {
+    "message": "Title A → Z"
+  },
+  "sortZA": {
+    "message": "Title Z → A"
+  },
+  "sortManual": {
+    "message": "Manual order"
+  },
+  "filterSyncAll": {
+    "message": "Sync: all"
+  },
+  "filterSynced": {
+    "message": "Synced"
+  },
+  "filterNotSynced": {
+    "message": "Not synced"
+  },
+  "filterFull": {
+    "message": "Full save"
+  },
+  "filterLink": {
+    "message": "Link only"
+  },
+  "countBookmarks": {
+    "message": "$1 of $2 bookmark(s) shown"
+  },
+  "editBookmark": {
+    "message": "Edit bookmark"
+  },
+  "fieldDescription": {
+    "message": "Description"
+  },
+  "fieldSaveMode": {
+    "message": "Save mode"
+  },
+  "cancel": {
+    "message": "Cancel"
+  },
+  "save": {
+    "message": "Save"
+  },
+  "conflictTitle": {
+    "message": "Resolve conflict"
+  },
+  "conflictHint": {
+    "message": "This bookmark was changed in both Firefox and Anytype. Choose which version to keep."
+  },
+  "keepFirefox": {
+    "message": "Keep Firefox"
+  },
+  "keepAnytype": {
+    "message": "Keep Anytype"
+  },
+  "later": {
+    "message": "Later"
+  },
+  "close": {
+    "message": "Close"
+  },
+  "renameFolder": {
+    "message": "Rename folder"
+  },
+  "newSubfolder": {
+    "message": "New subfolder"
+  },
+  "deleteFolder": {
+    "message": "Delete folder"
+  },
+  "deleteFolderConfirm": {
+    "message": "Delete folder “$1” and all its contents?"
+  },
+  "stateSynced": {
+    "message": "Synced"
+  },
+  "statePending": {
+    "message": "Waiting to sync"
+  },
+  "stateConflict": {
+    "message": "Conflict — click to resolve"
+  },
+  "ctxOpen": {
+    "message": "Open"
+  },
+  "ctxOpenNewTab": {
+    "message": "Open in new tab"
+  },
+  "ctxEdit": {
+    "message": "Edit"
+  },
+  "ctxDuplicate": {
+    "message": "Duplicate"
+  },
+  "ctxCopyLink": {
+    "message": "Copy link"
+  },
+  "ctxForceSync": {
+    "message": "Force sync"
+  },
+  "ctxOpenAnytype": {
+    "message": "Open in Anytype"
+  },
+  "ctxDelete": {
+    "message": "Delete"
+  },
+  "resolveConflict": {
+    "message": "Resolve conflict"
+  },
+  "linkCopied": {
+    "message": "Link copied"
+  },
+  "syncQueued": {
+    "message": "Sync requested"
+  },
+  "notSyncedYet": {
+    "message": "This bookmark hasn't been synced to Anytype yet."
+  },
+  "savePermissionHint": {
+    "message": "Save failed: open the page or grant the capture permission in settings."
+  },
+  "settings": {
+    "message": "Settings"
+  },
+  "settingsIntro": {
+    "message": "All data is stored locally and encrypted (AES-256). Nothing leaves your machine except to Anytype."
+  },
+  "sectionConnection": {
+    "message": "Anytype connection"
+  },
+  "disconnect": {
+    "message": "Revoke connection"
+  },
+  "disconnectConfirm": {
+    "message": "Revoke the Anytype token? You will need to reconnect."
+  },
+  "spaceHint": {
+    "message": "Space where bookmarks are created. Can be changed anytime."
+  },
+  "sectionSync": {
+    "message": "Sync"
+  },
+  "optAutoSync": {
+    "message": "Automatic sync"
+  },
+  "optSyncInterval": {
+    "message": "Interval (minutes)"
+  },
+  "optConflict": {
+    "message": "On conflict"
+  },
+  "conflictLatest": {
+    "message": "Latest change wins"
+  },
+  "conflictFirefox": {
+    "message": "Firefox wins"
+  },
+  "conflictAnytype": {
+    "message": "Anytype wins"
+  },
+  "conflictAsk": {
+    "message": "Ask me"
+  },
+  "importAll": {
+    "message": "Import existing Firefox bookmarks"
+  },
+  "importDone": {
+    "message": "$1 bookmark(s) imported."
+  },
+  "sectionSave": {
+    "message": "Page saving"
+  },
+  "optSaveMode": {
+    "message": "When adding a bookmark"
+  },
+  "saveModeLink": {
+    "message": "Link only"
+  },
+  "saveModeFull": {
+    "message": "Always save the page"
+  },
+  "saveModeAsk": {
+    "message": "Ask on every add"
+  },
+  "optSaveImages": {
+    "message": "Include images"
+  },
+  "optFetchPermission": {
+    "message": "Background page capture"
+  },
+  "fetchPermissionHint": {
+    "message": "Allows saving pages that aren't open in a tab."
+  },
+  "grant": {
+    "message": "Allow"
+  },
+  "granted": {
+    "message": "Permission granted"
+  },
+  "notGranted": {
+    "message": "Permission denied"
+  },
+  "sectionCache": {
+    "message": "Local cache"
+  },
+  "optMaxCache": {
+    "message": "Max size (MB)"
+  },
+  "optAutoPrune": {
+    "message": "Auto-delete oldest saved pages"
+  },
+  "cacheStats": {
+    "message": "$1 saved page(s) · $2 MB used"
+  },
+  "clearCache": {
+    "message": "Clear page cache"
+  },
+  "clearCacheConfirm": {
+    "message": "Delete all locally saved pages?"
+  },
+  "cacheCleared": {
+    "message": "Cache cleared"
+  },
+  "sectionUI": {
+    "message": "Interface"
+  },
+  "optTheme": {
+    "message": "Theme"
+  },
+  "themeAuto": {
+    "message": "Automatic (follow Firefox)"
+  },
+  "themeLight": {
+    "message": "Light"
+  },
+  "themeDark": {
+    "message": "Dark"
+  },
+  "optNotifications": {
+    "message": "Notifications"
+  },
+  "langHint": {
+    "message": "Language follows Firefox (French and English available)."
+  },
+  "saved": {
+    "message": "Saved"
+  },
+  "connStateOk": {
+    "message": "Connected to Anytype"
+  },
+  "connStateNoAuth": {
+    "message": "Anytype detected — connection required"
+  },
+  "connStateOffline": {
+    "message": "Anytype unreachable (app closed?)"
+  },
+  "syncShort": {
+    "message": "Sync"
+  },
+  "noReaderMode": {
+    "message": "Reader Mode unavailable on this page"
+  },
+  "permissionDenied": {
+    "message": "Permission denied: allow access to localhost to communicate with Anytype."
+  },
+  "chooseSpaceHint": {
+    "message": "Choose the Anytype space where your bookmarks will be created (changeable in Settings)."
+  },
+  "spaceChosen": {
+    "message": "Space selected"
+  },
+  "savedTag": {
+    "message": "Saved"
+  },
+  "sectionRules": {
+    "message": "Automatic tag rules"
+  },
+  "addRule": {
+    "message": "Add a rule"
+  },
+  "ruleName": {
+    "message": "Rule name (e.g. Work)"
+  },
+  "ruleEnabled": {
+    "message": "Rule enabled"
+  },
+  "matchAll": {
+    "message": "all conditions"
+  },
+  "matchAny": {
+    "message": "any condition"
+  },
+  "addCondition": {
+    "message": "Add a condition"
+  },
+  "condFolder": {
+    "message": "Folder"
+  },
+  "condTitle": {
+    "message": "Title"
+  },
+  "condUrl": {
+    "message": "URL"
+  },
+  "opEquals": {
+    "message": "equals"
+  },
+  "opStartsWith": {
+    "message": "starts with"
+  },
+  "opContains": {
+    "message": "contains"
+  },
+  "opNotContains": {
+    "message": "does not contain"
+  },
+  "opRegex": {
+    "message": "regex"
+  },
+  "condValuePlaceholder": {
+    "message": "value (e.g. work, Work/clients/<<client>>, ^https://…)"
+  },
+  "ruleTags": {
+    "message": "Tags to add"
+  },
+  "deleteRule": {
+    "message": "Delete rule"
+  },
+  "createFolderTitle": {
+    "message": "New folder"
+  },
+  "folderParent": {
+    "message": "Parent folder"
+  },
+  "rulesIntroShort": {
+    "message": "Automatically add tags based on the bookmark's folder, title or URL. Click “?” for the guide and dynamic variables."
+  },
+  "rulesHelpTitle": {
+    "message": "Help — Automatic tag rules"
+  },
+  "rulesHelpWhat": {
+    "message": "A rule = conditions + tags. If the conditions match (all of them, or at least one, depending on the chosen mode), the tags are added to the bookmark. Every matching rule applies at the same time."
+  },
+  "rulesHelpWhen": {
+    "message": "Rules apply: in the popup as soon as you pick a folder (tags appear immediately and can be removed), when you move a bookmark in Firefox, when a bookmark is created, and when a folder is renamed."
+  },
+  "rulesHelpVarsTitle": {
+    "message": "Dynamic variables"
+  },
+  "rulesHelpVars1": {
+    "message": "Write <<var>> (or $$$$var — both are equivalent) in a condition to capture a folder name, then reuse <<var>> in the tags. A variable captures exactly one folder level and keeps the original casing."
+  },
+  "rulesHelpExCond": {
+    "message": "Condition: Folder · contains · Work/clients/<<client>>"
+  },
+  "rulesHelpExTag": {
+    "message": "Tags to add: <<client>>"
+  },
+  "rulesHelpExResult": {
+    "message": "→ a bookmark placed in “Work/clients/Company1” gets the tag Company1; in “Work/clients/Smith”, the tag Smith."
+  },
+  "rulesHelpVars2": {
+    "message": "Multiple variables are allowed (Work/<<type>>/<<name>>) and tags can be composed (project-<<name>>). A tag whose variable is unresolved is skipped."
+  },
+  "rulesHelpVars3": {
+    "message": "With the regex operator, capture groups become <<1>>, <<2>>… and named groups (?<org>…) become <<org>>. Example: URL · regex · github\\.com/(?<org>[\\w-]+)/ with the tag gh:<<org>>."
+  }
+}

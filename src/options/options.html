@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html data-theme="auto">
+<head>
+  <meta charset="utf-8" />
+  <title data-i18n="settings"></title>
+  <link rel="stylesheet" href="../lib/theme.css" />
+  <style>
+    body { max-width: 620px; margin: 0 auto; padding: 32px 20px 60px; font-size: 14px; }
+    h1 { font-size: 20px; margin-bottom: 4px; display: flex; align-items: center; gap: 10px; }
+    section { margin-top: 28px; padding-top: 18px; border-top: 1px solid var(--line); }
+    section h2 { font-size: 14px; margin-bottom: 12px; }
+    .row2 { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 12px; }
+    .row2 label { margin: 0; color: var(--ink); }
+    .row2 .hint { display: block; font-size: 12px; color: var(--ink-3); margin-top: 2px; }
+    .row2 select, .row2 input[type="number"] { width: 180px; }
+    .conn-state { display: flex; align-items: center; gap: 8px; margin-bottom: 12px; }
+    .code-row { display: flex; gap: 8px; margin-top: 8px; max-width: 280px; }
+    #codeInput { font-family: var(--mono); font-size: 18px; letter-spacing: .4em; text-align: center; }
+    .danger-zone .btn { color: var(--danger); }
+    .rule {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 14px;
+      margin-bottom: 12px;
+      background: var(--bg-raise);
+    }
+    .rule-head { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
+    .rule-head input[type="text"] { flex: 1; font-weight: 600; }
+    .rule-head select { width: auto; }
+    .cond { display: flex; gap: 6px; align-items: center; margin-bottom: 6px; }
+    .cond select { width: auto; }
+    .cond input { flex: 1; }
+    .rule-tags { margin-top: 8px; }
+    .rule-foot { display: flex; justify-content: space-between; align-items: center; margin-top: 10px; }
+    .btn-x { padding: 4px 9px; }
+  </style>
+</head>
+<body>
+  <h1><span class="ribbon synced" style="width:14px;height:20px"></span> Anytype Marks — <span data-i18n="settings"></span></h1>
+  <p class="muted" data-i18n="settingsIntro"></p>
+
+  <!-- ---------- connexion ---------- -->
+  <section>
+    <h2 data-i18n="sectionConnection"></h2>
+    <div class="conn-state">
+      <span class="ribbon" id="connRibbon"></span>
+      <span id="connText"></span>
+    </div>
+    <div id="connActions">
+      <button class="btn btn-primary" id="connectBtn" data-i18n="connectAnytype"></button>
+      <button class="btn btn-danger" id="disconnectBtn" hidden data-i18n="disconnect"></button>
+      <div id="codeStep" hidden>
+        <p class="small muted" data-i18n="connectCodeHint"></p>
+        <div class="code-row">
+          <input type="text" id="codeInput" maxlength="4" inputmode="numeric" placeholder="0000" />
+          <button class="btn btn-primary" id="codeSubmit" data-i18n="validate"></button>
+        </div>
+      </div>
+      <p id="connError" class="small" style="color:var(--danger)" hidden></p>
+    </div>
+    <div class="row2" style="margin-top:16px">
+      <div><label data-i18n="fieldSpace"></label><span class="hint" data-i18n="spaceHint"></span></div>
+      <select id="space"></select>
+    </div>
+  </section>
+
+  <!-- ---------- synchronisation ---------- -->
+  <section>
+    <h2 data-i18n="sectionSync"></h2>
+    <div class="row2">
+      <div><label for="autoSync" data-i18n="optAutoSync"></label></div>
+      <input type="checkbox" id="autoSync" />
+    </div>
+    <div class="row2">
+      <div><label for="syncInterval" data-i18n="optSyncInterval"></label></div>
+      <input type="number" id="syncInterval" min="1" max="120" />
+    </div>
+    <div class="row2">
+      <div><label for="conflictPolicy" data-i18n="optConflict"></label></div>
+      <select id="conflictPolicy">
+        <option value="latest" data-i18n="conflictLatest"></option>
+        <option value="firefox" data-i18n="conflictFirefox"></option>
+        <option value="anytype" data-i18n="conflictAnytype"></option>
+        <option value="ask" data-i18n="conflictAsk"></option>
+      </select>
+    </div>
+    <button class="btn" id="importBtn" data-i18n="importAll"></button>
+    <span class="small muted" id="importResult"></span>
+  </section>
+
+  <!-- ---------- sauvegarde des pages ---------- -->
+  <section>
+    <h2 data-i18n="sectionSave"></h2>
+    <div class="row2">
+      <div><label for="saveMode" data-i18n="optSaveMode"></label></div>
+      <select id="saveMode">
+        <option value="link" data-i18n="saveModeLink"></option>
+        <option value="full" data-i18n="saveModeFull"></option>
+        <option value="ask" data-i18n="saveModeAsk"></option>
+      </select>
+    </div>
+    <div class="row2">
+      <div><label for="saveImages" data-i18n="optSaveImages"></label></div>
+      <input type="checkbox" id="saveImages" />
+    </div>
+    <div class="row2">
+      <div>
+        <label data-i18n="optFetchPermission"></label>
+        <span class="hint" data-i18n="fetchPermissionHint"></span>
+      </div>
+      <button class="btn" id="grantFetch" data-i18n="grant"></button>
+    </div>
+  </section>
+
+  <!-- ---------- règles de tags automatiques ---------- -->
+  <section>
+    <h2 style="display:flex;align-items:center;gap:8px">
+      <span data-i18n="sectionRules"></span>
+      <button class="btn btn-ghost btn-x" id="rulesHelpBtn" data-i18n-title="rulesHelpTitle" title="" style="font-weight:700">?</button>
+    </h2>
+    <p class="small muted" data-i18n="rulesIntroShort"></p>
+    <div id="rulesList"></div>
+    <button class="btn" id="addRuleBtn" data-i18n="addRule"></button>
+  </section>
+
+  <dialog id="rulesHelpDialog" style="max-width:560px;border:1px solid var(--line);border-radius:var(--radius);background:var(--bg-raise);color:var(--ink);padding:22px">
+    <h2 data-i18n="rulesHelpTitle" style="margin-bottom:12px"></h2>
+    <p data-i18n="rulesHelpWhat" style="margin:0 0 10px"></p>
+    <p data-i18n="rulesHelpWhen" style="margin:0 0 14px"></p>
+    <h3 data-i18n="rulesHelpVarsTitle" style="font-size:13.5px;margin-bottom:8px"></h3>
+    <p data-i18n="rulesHelpVars1" style="margin:0 0 10px"></p>
+    <div style="border:1px solid var(--line);border-radius:var(--radius-s);padding:10px 12px;font-size:13px;background:var(--bg);margin-bottom:10px">
+      <div data-i18n="rulesHelpExCond"></div>
+      <div data-i18n="rulesHelpExTag"></div>
+      <div class="muted" data-i18n="rulesHelpExResult" style="margin-top:6px"></div>
+    </div>
+    <p class="small muted" data-i18n="rulesHelpVars2" style="margin:0 0 6px"></p>
+    <p class="small muted" data-i18n="rulesHelpVars3" style="margin:0 0 14px"></p>
+    <div style="display:flex;justify-content:flex-end">
+      <button class="btn btn-primary" id="rulesHelpClose" data-i18n="close"></button>
+    </div>
+  </dialog>
+
+  <!-- ---------- cache ---------- -->
+  <section>
+    <h2 data-i18n="sectionCache"></h2>
+    <div class="row2">
+      <div><label for="maxCache" data-i18n="optMaxCache"></label></div>
+      <input type="number" id="maxCache" min="10" max="5000" />
+    </div>
+    <div class="row2">
+      <div><label for="autoPrune" data-i18n="optAutoPrune"></label></div>
+      <input type="checkbox" id="autoPrune" />
+    </div>
+    <p class="small muted" id="cacheStats"></p>
+    <button class="btn btn-danger" id="clearCache" data-i18n="clearCache"></button>
+  </section>
+
+  <!-- ---------- interface ---------- -->
+  <section>
+    <h2 data-i18n="sectionUI"></h2>
+    <div class="row2">
+      <div><label for="theme" data-i18n="optTheme"></label></div>
+      <select id="theme">
+        <option value="auto" data-i18n="themeAuto"></option>
+        <option value="light" data-i18n="themeLight"></option>
+        <option value="dark" data-i18n="themeDark"></option>
+      </select>
+    </div>
+    <div class="row2">
+      <div><label for="notifications" data-i18n="optNotifications"></label></div>
+      <input type="checkbox" id="notifications" />
+    </div>
+    <p class="small muted" data-i18n="langHint"></p>
+  </section>
+
+  <script src="../lib/util.js"></script>
+  <script src="../lib/ui-common.js"></script>
+  <script src="options.js"></script>
+</body>
+</html>
